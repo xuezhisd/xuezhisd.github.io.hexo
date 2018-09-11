@@ -1,9 +1,9 @@
 ---
 title: 2018-9-11-NYU Depth v2数据库相关信息
 tags: 
- - 新建
+ - 数据库
 categories: 
- - 未分类
+ - 数据库
 comments: true
 updated: false
 author: 张学志
