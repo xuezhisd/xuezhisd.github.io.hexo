@@ -1,9 +1,11 @@
 ---
 title: 2018-9-11-配置小书匠的hexo blog模板
 tags: 
- - 新建
+ - 小书匠
+ - hexo
+ - blog
 categories: 
- - 未分类
+ - blog
 comments: true
 updated: false
 author: 张学志
