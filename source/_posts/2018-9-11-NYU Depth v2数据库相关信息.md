@@ -25,6 +25,11 @@ NYU Depth V2
 * 主页：https://cs.nyu.edu/~silberman/projects/indoor_scene_seg_sup.html
 
 
+```
+import numpy as np
+
+```
+
 
 
 
