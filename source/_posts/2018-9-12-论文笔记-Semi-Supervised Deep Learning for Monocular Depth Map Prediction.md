@@ -37,5 +37,4 @@ grammar_cjkRuby: true
 
 
 ## 资源
-
 * [代码](https://github.com/Yevkuzn/semodepth)
