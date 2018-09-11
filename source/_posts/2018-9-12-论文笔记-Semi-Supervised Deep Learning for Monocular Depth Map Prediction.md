@@ -14,8 +14,18 @@ grammar_cjkRuby: true
 > 本文描述了：
 <!-- more -->论文：Semi-Supervised Deep Learning for Monocular Depth Map Prediction。
 
-## 分析
+## 贡献
+* 提出了一个半监督的深度估计算法：有监督loss + 无监督loss。
 
-* 激光雷达数据的问题：稀疏，噪声和标定不准确等因素影响。
+## 分析
+* 激光雷达数据的问题：
+	* 稀疏
+	* 噪声的影响
+	* 标定不准确的影响
+* 有监督loss 和 无监督loss：
+	* 使用激光雷达获取的稀疏的有效点做有监督loss训练。smooth_l1。
+	* 使用其它的像素点构建无监督loss。通过左右图像 + warp一致构建loss。
+	* 为了保证边缘的锐利度，根据边缘有构建了一个loss。
+* 
 
 
