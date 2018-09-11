@@ -24,6 +24,12 @@ NYU Depth V2
 * 贡献：NYU数据集
 * 主页：https://cs.nyu.edu/~silberman/projects/indoor_scene_seg_sup.html
 
+
+
+
+
+
+
 ## Predicting Depth, Surface Normals and Semantic Labels with a Common Multi-Scale Convolutional Architecture
 
 
