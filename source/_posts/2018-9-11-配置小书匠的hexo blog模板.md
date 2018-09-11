@@ -15,6 +15,9 @@ grammar_cjkRuby: true
 <!-- more -->
 
 
+## 模板内容
+
+* 按照以下填写模板，即可。
 
 ```
 ---
@@ -32,5 +35,4 @@ grammar_cjkRuby: true
 
 > 本文描述了：
 <!-- more -->
-
 ```
