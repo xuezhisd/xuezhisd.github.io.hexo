@@ -17,6 +17,20 @@ grammar_cjkRuby: true
 
 
 ```
+---
+title: <% print((new Date()).getFullYear().toString()+ '-'+ ((new Date()).getMonth() + 1).toString() + '-'+ (new Date()).getDate().toString()); %>-未命名
+tags: 
+ - 新建
+categories: 
+ - 未分类
+comments: true
+updated: false
+author: 张学志
+date: <% print((new Date()).getFullYear().toString()+ '-'+ ((new Date()).getMonth() + 1).toString() + '-'+ (new Date()).getDay().toString() + ' ' + (new Date()).getHours().toString() + ':' + (new Date()).getMinutes().toString() + ':' + (new Date()).getSeconds().toString()); %>
+grammar_cjkRuby: true
+---
 
+> 本文描述了：
+<!-- more -->
 
 ```
