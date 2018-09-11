@@ -27,7 +27,7 @@ NYU Depth V2
 
 ```
 import numpy as np
-
+print 'hello'
 ```
 
 
