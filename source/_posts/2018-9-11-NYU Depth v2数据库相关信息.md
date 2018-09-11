@@ -30,6 +30,7 @@ NYU Depth V2
 ## Depth Map Prediction from a Single Image using a Multi-Scale Deep Network
 * Eigen 论文切分方法
 * 使用数据库：NYU Depth V2和KITTI
+* 融合全局和局部信息，提高鲁棒性。本文通过coarse net估计全局depth结构，在更大分辨率上refine。
 * 贡献：
     * 1. 由粗到细的策略。两个网络，粗网络使用全局特征，估计全局结构；精细网络使用局部特征，refine结果。
     * 2. 提出尺度无关的误差。
@@ -47,23 +48,23 @@ NYU Depth V2
 * batch_size：32
 * SGD优化算法；lr=0.001
 
-Kitti Raw
-56个场景，28用于训练，28个用于测试。
-每个场景有800张图像；去除汽车静止的图片，避免重复。
-左右摄像头数据都使用了，但不做关联。
-训练集有20K图像，经过均匀化每个场景的样本量，扩充至40K。
+* Kitti Raw
+    * 56个场景，28用于训练，28个用于测试。
+    * 每个场景有800张图像；去除汽车静止的图片，避免重复。
+    * 左右摄像头数据都使用了，但不做关联。
+    * 训练集有20K图像，经过均匀化每个场景的样本量，扩充至40K。
+
+* 使用最近邻上采样，将预测的低分辨率输出 还原到 原始分辨率。
+
+* 切分带标签的数据集
+    * train:795
+    * test:654
+    * https://github.com/janivanecky/Depth-Estimation/tree/master/dataset
+
+* 评价指标如下所示：
+![enter description here](https://www.github.com/xuezhisd/xuezhisd.github.io.img/raw/dev/imgs/1536671720648.png)
 
 
-使用最近邻上采样，将预测的低分辨率输出 还原到 原始分辨率。
-
-train:795
-test:654
-https://github.com/janivanecky/Depth-Estimation/tree/master/dataset
-
-评价指标如下所示：
-
-
-融合全局和局部信息，提高鲁棒性。本文通过coarse net估计全局depth结构，在更大分辨率上refine。
 
 
 
