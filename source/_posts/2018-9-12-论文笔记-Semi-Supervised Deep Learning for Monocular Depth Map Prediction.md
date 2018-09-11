@@ -3,6 +3,7 @@ title: 2018-9-12-论文笔记-Semi-Supervised Deep Learning for Monocular Depth 
 tags: 
  - 论文
 categories: 
+ - 论文
 comments: true
 updated: false
 author: 张学志
