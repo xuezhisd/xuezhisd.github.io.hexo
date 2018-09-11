@@ -38,3 +38,4 @@ grammar_cjkRuby: true
 
 ## 资源
 * [代码](https://github.com/Yevkuzn/semodepth)
+* [论文笔记-深度估计(4) Semi-Supervised Deep Learning for Monocular Depth Map Prediction](https://blog.csdn.net/Kevin_cc98/article/details/78937773)
