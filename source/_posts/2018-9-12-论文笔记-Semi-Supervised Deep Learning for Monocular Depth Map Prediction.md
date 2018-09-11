@@ -1,9 +1,9 @@
 ---
-title: 2018-9-12-论文笔记-Semi-Supervised Deep Learning for Monocular Depth Map Prediction
+title: 2018-9-12-论文-Semi-Supervised Deep Learning for Monocular Depth Map Prediction
 tags: 
- - 新建
+ - 论文
 categories: 
- - 未分类
+ - 论文
 comments: true
 updated: false
 author: 张学志
