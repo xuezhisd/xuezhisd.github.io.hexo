@@ -22,6 +22,7 @@ grammar_cjkRuby: true
 * 按照以下填写模板，即可。
 
 ```
+
 ---
 title: <% print((new Date()).getFullYear().toString()+ '-'+ ((new Date()).getMonth() + 1).toString() + '-'+ (new Date()).getDate().toString()); %>-未命名
 tags: 
@@ -37,4 +38,5 @@ grammar_cjkRuby: true
 
 > 本文描述了：
 <!-- more -->
+
 ```
