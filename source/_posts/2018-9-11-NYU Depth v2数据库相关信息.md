@@ -28,33 +28,24 @@ NYU Depth V2
 
 
 ## Depth Map Prediction from a Single Image using a Multi-Scale Deep Network
+* Eigen 论文切分方法
+* 使用数据库：NYU Depth V2和KITTI
+* 贡献：
+    * 1. 由粗到细的策略。两个网络，粗网络使用全局特征，估计全局结构；精细网络使用局部特征，refine结果。
+    * 2. 提出尺度无关的误差。
 
-
-Eigen 论文切分方法
-
-
-
-
-
-
-Depth Map Prediction from a Single Image using a Multi-Scale Deep Network
-使用数据库：NYU Depth V2和KITTI
-贡献：
-1. 由粗到细的策略。两个网络，粗网络使用全局特征，估计全局结构；精细网络使用局部特征，refine结果。
-2. 提出尺度无关的误差。
-
-464个场景，249个作为训练集，215个作为测试集。
-使用NYU Raw，构建训练集。
-分辨率下采样1/2。（640x480→320x240）
-由于RGB图和depth图采样频率不一致，需要做时间同步。（把一个图像对应多个depth的样本删除）。
-使用相机参数对齐RGB图和depth图。
-没有深度信息的像素点 mask掉。
-为了去除窗子，开着的门和光谱引起的无效区域，也mask掉等于最小值和最大值的区域。
-训练集有120K图像，经过均匀化每个场景的样本量，得到220K图像。1200 * 249=298800。
-2M 训练coarse net；
-1.5M 训练fine net；
-batch_size：32
-SGD优化算法；lr=0.001
+* 464个场景，249个作为训练集，215个作为测试集。
+* 使用NYU Raw，构建训练集。
+* 分辨率下采样1/2。（640x480→320x240）
+* 由于RGB图和depth图采样频率不一致，需要做时间同步。（把一个图像对应多个depth的样本删除）。
+* 使用相机参数对齐RGB图和depth图。
+* 没有深度信息的像素点 mask掉。
+* 为了去除窗子，开着的门和光谱引起的无效区域，也mask掉等于最小值和最大值的区域。
+* 训练集有120K图像，经过均匀化每个场景的样本量，得到220K图像。1200 * 249=298800。
+* 2M 训练coarse net；
+* 1.5M 训练fine net；
+* batch_size：32
+* SGD优化算法；lr=0.001
 
 Kitti Raw
 56个场景，28用于训练，28个用于测试。
