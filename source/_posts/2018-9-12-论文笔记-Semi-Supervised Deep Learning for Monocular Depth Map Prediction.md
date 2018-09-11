@@ -12,4 +12,10 @@ grammar_cjkRuby: true
 ---
 
 > 本文描述了：
-<!-- more -->
+<!-- more -->论文：Semi-Supervised Deep Learning for Monocular Depth Map Prediction。
+
+## 分析
+
+* 激光雷达数据的问题：稀疏，噪声和标定不准确等因素影响。
+
+
