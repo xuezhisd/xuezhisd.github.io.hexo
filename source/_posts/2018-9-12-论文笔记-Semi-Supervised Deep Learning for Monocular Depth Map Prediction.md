@@ -11,8 +11,8 @@ date: 2018-9-3 7:30:39
 grammar_cjkRuby: true
 ---
 
-> 本文描述了：
-<!-- more -->论文：Semi-Supervised Deep Learning for Monocular Depth Map Prediction。
+> 本文分析了论文：Semi-Supervised Deep Learning for Monocular Depth Map Prediction
+<!-- more -->。
 
 ## 贡献
 * 提出了一个半监督的深度估计算法：有监督loss + 无监督loss。
