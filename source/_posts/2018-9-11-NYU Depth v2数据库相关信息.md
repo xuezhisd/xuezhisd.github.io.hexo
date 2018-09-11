@@ -14,25 +14,28 @@ grammar_cjkRuby: true
 > 本文描述了：
 <!-- more -->
 
-
-
+## 基本信息
 
 NYU Depth V2
 
 链接
 
+## Indoor Segmentation and Support Inference from RGBD Images
 
+* 主页：https://cs.nyu.edu/~silberman/projects/indoor_scene_seg_sup.html
+
+## Predicting Depth, Surface Normals and Semantic Labels with a Common Multi-Scale Convolutional Architecture
+
+
+## Depth Map Prediction from a Single Image using a Multi-Scale Deep Network
 
 
 Eigen 论文切分方法
 
 
 
-Indoor Segmentation and Support Inference from RGBD Images
-https://cs.nyu.edu/~silberman/projects/indoor_scene_seg_sup.html
 
 
-Predicting Depth, Surface Normals and Semantic Labels with a Common Multi-Scale Convolutional Architecture
 
 Depth Map Prediction from a Single Image using a Multi-Scale Deep Network
 使用数据库：NYU Depth V2和KITTI
